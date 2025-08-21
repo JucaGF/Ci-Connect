@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Setup CI-Connect Project",
+			"type": "shell",
+			"command": "echo 'Configurando projeto CI-Connect...' && cd frontend && npm install && cd ../backend && npm install && echo 'Dependências instaladas com sucesso!' && echo 'Para iniciar o projeto:' && echo '1. Backend: cd backend && npm run dev' && echo '2. Frontend: cd frontend && npm start' && echo '3. AI Services: source .venv/bin/activate && cd ai-services && python app.py'",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
